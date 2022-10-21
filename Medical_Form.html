@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>Medical_Form</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        .box {
+            background-color: transparent;
+            padding: 10px;
+            width: 800px;
+            margin-left: 20%;
+
+        }
+
+        .fm {
+            padding: 10px;
+        }
+
+        .lg {
+            font-size: 18px;
+            font-weight: bold;         
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center" style="color: rgb(1, 62, 1);">Patient Entry Form</h1>
+    <hr color="green">
+
+    <form method="post" action="test.html">
+        <div class="box">
+            <fieldset>
+                <legend class="lg"> Patient Info. </legend>
+                <div class="fm">
+                    <label>First Name: &nbsp;</label>
+                    <input type="text" name="fname" placeholder="Enter Your Name" required>&nbsp;&nbsp;
+                    <label>Last Name: &nbsp; </label>
+                    <input type="text" name="lname" placeholder="Enter Your Surname" required>
+                    <br> <br>
+                    <label>Date Of Birth: &nbsp; </label>
+                    <input type="date">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Age &nbsp; </label>
+                    <input type="number">
+
+                    <br><br>
+                    <label>Gender: &nbsp; </label>
+                    <input type="radio" name="Gender" value="Male" required>Male
+                    <input type="radio" name="Gender" value="Female" required>Female
+                    <input type="radio" name="Gender" value="Other" required>Other
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="box">
+            <fieldset>
+                <legend class="lg"> Contact Details. </legend>
+                <div class="fm">
+                    <label>Contact No.: &nbsp;</label>
+                    <input type="text" name="number_1" placeholder="Enter your mobile no." pattern="\d*" maxlength="10"
+                        required>&nbsp;&nbsp;
+                    <label>Emergency Contact: &nbsp; </label>
+                    <input type="text" name="number_2" placeholder="Enter your mobile no." pattern="\d*" maxlength="10"
+                        required>
+                    <br> <br>
+
+                    <label>Email Id: &nbsp;</label>
+                    <input type="email" name="mail" placeholder="Enter Your email_id">
+                    <br><br>
+                    <label>Address: &nbsp; </label> <br>
+                    <textarea name="Add" rows="6" cols="60" required> Enter your address.... </textarea>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="box">
+            <fieldset>
+                <legend class="lg"> Additional details </legend>
+                <div class="fm">
+                    <label>Past medical history: &nbsp;</label>
+                    <input type="checkbox" name="history" value="Anemia">Anemia &nbsp;&nbsp;
+                    <input type="checkbox" name="history" value="Asthma">Asthma &nbsp;&nbsp;
+                    <input type="checkbox" name="history" value="Chickenpox">Chickenpox &nbsp;&nbsp;
+                    <input type="checkbox" name="history" value="Diabetes">Diabetes &nbsp;&nbsp;
+                    <input type="checkbox" name="history" value="Ulcer">Ulcer &nbsp;&nbsp;
+                    <input type="checkbox" name="history" value="Thyroid">Thyroid &nbsp;&nbsp;
+                    <br><br>
+                    <label>Taking any medications, currently? &nbsp; </label>
+                    <input type="radio" name="tmc" value="Yes">Yes
+                    <input type="radio" name="tmc" value="No">No
+                    <br><br>
+                    <label> Doctor Name:&nbsp;</label>
+                    <select name="Doctor Name" required>
+                        <option value="" selected disabled>Select Dr.</option>
+                        <option value="Dr.Vasudev patel">Dr.Vasudev patel</option>
+                        <option value="Dr.A.C.">Dr.A.C.</option>
+                        <option value="Dr.H.K.">Dr.H.K.</option>
+                        <option value="Dr.R.K.">Dr.R.K.</option>
+                        <option value="Dr.D.M.">Dr.D.M.</option>
+                    </select>
+                    <br><br>
+                    <label>Description: &nbsp; </label> <br>
+                    <textarea name="des" rows="6" cols="60"> Enter patient Description</textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="Submit" name="Submit" value="Submit">
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" value="Reset">
+                 </div>
+            </fieldset>
+                 </div>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
