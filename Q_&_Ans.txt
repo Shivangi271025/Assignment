@@ -1,0 +1,87 @@
+Q.1.......What Is Object Oriented Programming?
+
+Answer......
+
+->   object oriented programming allows programmers to group similar tasks 
+     in to classes, 
+
+->   a class may have data and the functions to access that data, 
+     tied together not visible from outside.
+->   Object-oriented programming is a organizing code for maximum reusability
+
+->   program developed around objects and classes.
+
+
+Q.2... What Are Properties Of Object Oriented Systems?
+
+->   there are 4 basic features of object oriented programming.
+   
+1.... Encapsulation.
+2.... Abstraction.
+3.... Inheritance.
+4.... polymorphism.
+
+
+1.... Encapsulation.
+
+-> binding function and data in a single unit its known as Encapsulation.
+
+2.... Abstraction.
+
+-> providing the essential features without showing background details.
+
+3.... Inheritance.
+
+-> when a class acquires the features/propertise of another classes.
+
+4.... polymorphism.
+
+-> Single name-multiple forms is known as Polymorphism.
+
+
+
+Q.3.....What Is Difference Between Class And Interface?
+
+->Class
+
+Multiple Inheritance is not supported.               
+final, non-final, static and non-static variables supported.
+class can implement an interface.
+class is declared using class keyword.
+class can inherit another class using extends keyword and implement an interface.
+class can have constructor methods.
+class can have any type of members like private, public.
+class can be inherited using extends keyword.
+
+->Interface
+
+Interface supports Multiple Inheritance.
+Only static and final variables are permitted.
+Interface can not implement an interface, it can extend an interface.
+Interface is declared using interface keyword.
+Interface can inherit only an inteface.
+Interface can not have a constructor.
+Interface can only have public members.
+Interface can only be implemented using implements keyword.
+
+
+Q.4....what is overloading ?
+
+PHP में Overloading का मतलब किसी Object की Properties and Methods को
+Dynamically यानी Script के Run Time में Create करना होता है।
+
+Q.5....Define Constructor and Destructor?
+
+->>the Constructors are the blueprints for object creation providing values for 
+member functions and member variables. 
+Once the object is initialized, the constructor is automatically called. 
+
+function __construct() {
+            // initialize the object properties
+        }
+
+->> Destructors are for destroying objects and automatically called at the end of execution.
+
+function __destruct() {
+            // clearing the object reference
+        }
