@@ -85,3 +85,17 @@ function __construct() {
 function __destruct() {
             // clearing the object reference
         }
+
+
+Q.6.....What are PHP Magic Methods/Functions? List them
+
+->>
+ __construct(), __destruct()
+ __call(), __callStatic()
+ __get(), __set()
+ __isset(), __unset()
+ __sleep(), __wakeup()
+ __serialize(), __unserialize()
+ __toString(), __invoke()
+ __set_state(), __clone()
+ __debugInfo().
